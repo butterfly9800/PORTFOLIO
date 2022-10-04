@@ -1,0 +1,51 @@
+/* My UX skills section coded using CSS Flex */
+
+p { 
+    border: 2px solid violet;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.bodyText {
+    font: 16px Roboto, semibold; 
+    Line-height: 8px;
+    Line-height: 100%;
+    text-align: Left;
+    vertical-align: text-top;
+    letter-spacing: 0.02px;
+    outline-style: double;
+}
+
+/* My Work Section Constructed using CSS Grid */
+
+.grid-container {
+    display: grid;
+    flex-direction: rows;
+    grid-template-areas: "myArea myArea myArea";
+    grid-template-rows: px 100px 100px;
+    
+}
+
+.portfolioImage {
+    height: 100px; 
+    width: auto;  
+}
+.colorChange { 
+    color: black;
+}
+
+@media only screen and (max-width: 25)
+
+{
+    
+    .grid-container {
+        margin: 0px 5%;
+        grid-template-rows: 5fr; 
+    }
+}
+
+.portfolioImage {
+    height: 450px; 
+    width: auto;  
+}
